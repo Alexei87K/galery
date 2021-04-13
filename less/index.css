@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 780px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+img {
+  max-width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.grid .grid-item {
+  padding: 0;
+  margin: 0;
+}
+.grid .grid-item img {
+  max-width: 100%;
+}
+.grid .gl1 {
+  min-height: 215px;
+  max-width: 492px;
+}
+.grid .gl2 {
+  min-height: 215px;
+  max-width: 333px;
+}
+.grid .gl3 {
+  min-height: 477px;
+  max-width: 265px;
+}
+.grid .gl4 {
+  min-height: 233px;
+  max-width: 265px;
+}
+.grid .gl5 {
+  max-width: 560px;
+  min-height: 233px;
+}
+.debugGrid {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  height: 500px;
+}
+.debugGrid > div {
+  height: inherit;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 780px) {
+  .debugGrid > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .debugGrid > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.debugGrid > div > div {
+  height: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.debugGrid > div > div > div {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(8.333333333333334% - 30px);
+  height: inherit;
+  outline: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.5);
+}
